@@ -29,15 +29,13 @@
 
 .container {
   width: 100%;
-  height: 700px;
   padding: 20px;
   background-image: url("morocco.png");
   background-color: azure;
 }
 
 .wrapper {
-  width: 960px;
-  height: 450px;
+  width: 80%;
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
@@ -104,15 +102,13 @@ footer {
 
 .container-con {
   width: 100%;
-  height: 700px;
   padding: 20px;
   background-image: url("morocco.png");
   background-color: azure;
 }
 
 .wrapper-con {
-  width: 760px;
-  height: 450px;
+  width: 80%;
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
@@ -177,3 +173,21 @@ footer {
   margin: 15px 2px;
   cursor: pointer;
 }
+
+/*
+  These rules take effect when the browser's width
+  is either 768px or less.
+*/
+@media screen and (max-width: 768px) {
+  /* The container size will shrink */
+  .container-con {
+    /* height: 700px; */
+    /* padding: 20px; */
+  }
+
+  /* The wrapper's width will be 600px */
+  .wrapper {
+    width: 80%;
+
+  }
+
