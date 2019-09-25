@@ -29,7 +29,7 @@
 
 .container {
   width: 100%;
-  padding: 20px;
+  padding: 5%;
   background-image: url("morocco.png");
   background-color: azure;
 }
@@ -37,7 +37,7 @@
 .wrapper {
   width: 80%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 5%;
   background-color: #fff;
   position: relative;
 }
@@ -102,7 +102,7 @@ footer {
 
 .container-con {
   width: 100%;
-  padding: 20px;
+  padding: 5%;
   background-image: url("morocco.png");
   background-color: azure;
 }
@@ -110,7 +110,7 @@ footer {
 .wrapper-con {
   width: 80%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 5%;
   background-color: #fff;
   position: relative;
 }
@@ -125,7 +125,7 @@ footer {
 .container-port {
   width: 100%;
   height: 800px;
-  padding: 20px;
+  padding: 5%;
   background-image: url("morocco.png");
   background-color: azure;
 }
@@ -134,7 +134,7 @@ footer {
   width: 80%;
   margin: 0 auto;
   height: 800px;
-  padding: 20px;
+  padding: 5%;
   background-color: #fff;
   position: relative;
 }
@@ -201,16 +201,26 @@ footer {
   These rules take effect when the browser's width
   is either 768px or less.
 */
-/* @media screen and (max-width: 768px) { */
-  /* The container size will shrink */
-  /* .container-con { */
-    /* height: 700px; */
-    /* padding: 20px; */
+@media screen and (max-width: 768px) {
+  /* The container size will expand */
+  .container-port {
+    height: 600px;
   }
 
   /* The wrapper's width will be 600px */
-  /* .wrapper { */
-    /* width: 80%; */
+  .wrapper-port {
+  height: 550px;
+  }
+}
 
+@media screen and (max-width: 1024px) {
+  /* The container size will expand */
+  .container-port {
+    height: 500px;
   }
 
+  /* The wrapper's width will be 600px */
+  .wrapper-port {
+    height: 450px;
+  }
+}
