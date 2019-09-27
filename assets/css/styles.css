@@ -197,6 +197,19 @@ footer {
   cursor: pointer;
 }
 
+.button-port {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #45AAA6;
+  border: none;
+  color: white;
+  padding: 2%;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  right: 0;
+  left: 0;
+  cursor: pointer;
+}
 /*
   These rules take effect when the browser's width
   is either 768px or less.
